@@ -1,0 +1,8 @@
+main:
+  - title: "krknctl-assist"
+    status: "in production"
+    subtitle: "Local-first AI assistant for Kubernetes chaos engineering"
+    duration: "Linux Foundation Mentorship 2026"
+    description: "Maps natural-language chaos engineering intents to executable Krkn scenarios using SOTA information retrieval techniques. Cross platform acceleration via Vulkan backend."
+    image: "./assets/img/krkn.png"
+    repo: "https://github.com/krkn-chaos/krknctl-assist"
