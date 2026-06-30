@@ -2,7 +2,7 @@ main:
   - name: "Sezzle"
     position: "AI Engineer I"
     duration: "Jul 2026 - Present"
-    description: "Building production AI systems for fintech workflows, automation, and engineering productivity."
+    description: "Going to build AI systems for fintech workflows!"
     website: "https://sezzle.com/"
     logo: "./assets/img/sezzle.jpg"
 
@@ -16,7 +16,7 @@ main:
   - name: "Nation with Namo"
     position: "AI Engineer Intern"
     duration: "Jun 2025 - Jul 2025"
-    description: "Built an internal AI tool for organizing unstructured data into useful business insights. Received return offer"
+    description: "Built an internal AI tool for organizing unstructured data into business insights. Received return offer"
     website: "https://www.nationwithnamo.com/"
     logo: "./assets/img/nwn.png"
 

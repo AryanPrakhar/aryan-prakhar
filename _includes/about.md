@@ -1,5 +1,3 @@
-<h2 id="about" style="margin: 2px 0px -15px;">About</h2>
-
 <div class="about-copy" style="margin-top: 20px;">
   <p class="about-hello">Hi!</p>
   <p>
