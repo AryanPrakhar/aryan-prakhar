@@ -85,7 +85,7 @@ twitter: https://twitter.com/
 # Bilder (z. B. Ihr Profilbild und das Favicon Ihrer Website)
 # "favicon" und "favicon_dark" werden für den Hell- bzw. Dunkelmodus verwendet.
 avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
+favicon: assets/img/profile-img.jpg
 favicon_dark: ./assets/img/favicon-dark.png
 
 # Google Analytics ID

@@ -10,7 +10,7 @@
 
 An improved vision from [@Xiao-Chenguang](https://github.com/Xiao-Chenguang): [[link](https://github.com/Xiao-Chenguang/minimal-light)]
 
-**The latest version of my homepage is available here: <br><https://github.com/yaoyao-liu/yaoyao-liu.github.io>**
+**The latest version of my homepage is available here: <br><https://github.com/yaoyao-liu/homepage>**
 
 ## Features
 
@@ -132,7 +132,7 @@ twitter: https://twitter.com/
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
 avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
+favicon: assets/img/profile-img.jpg
 favicon_dark: ./assets/img/favicon-dark.png
 
 # Footnote

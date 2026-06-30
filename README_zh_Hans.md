@@ -80,7 +80,7 @@ twitter: https://twitter.com/
 
 # 图片路径
 avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
+favicon: assets/img/profile-img.jpg
 favicon_dark: ./assets/img/favicon-dark.png
 
 # Google Analytics ID
