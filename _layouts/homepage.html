@@ -96,8 +96,14 @@
         </div>
       </header>
       <section class="portfolio-content">
-
+      <div class="portfolio-shell">
+        <main class="portfolio-main">
       {{ content }}
+        </main>
+        <aside class="portfolio-rail">
+          {% include news.md %}
+        </aside>
+      </div>
 
       <br>
 
