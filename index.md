@@ -1,5 +1,7 @@
 ---
 layout: homepage
+title: Aryan Prakhar
+permalink: /
 ---
 
 {% include_relative _includes/about.md %}
@@ -15,6 +17,3 @@ layout: homepage
 {% include_relative _includes/achievements.md %}
 
 {% include_relative _includes/contact.md %}
-
-<!-- 
-{% include_relative _includes/services.md %} -->

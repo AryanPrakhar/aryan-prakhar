@@ -25,7 +25,7 @@ main:
     duration: "May 2024 - Jul 2024"
     description: "Built AI workflow for document intelligence and automated drafting of civil court orders."
     website: "https://www.codeforgovtech.in/"
-    logo: "./assets/img/c4gt.jpg"
+    logo: "./assets/img/c4gt.png"
 
   - name: "OpenLocus"
     position: "Machine Learning Engineer Intern"

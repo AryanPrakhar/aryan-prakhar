@@ -1,13 +1,12 @@
-<h2 id="achievements" style="margin: 2px 0px -15px;">Achievements</h2>
+<h2 id="achievements" class="section-heading">
+  <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+  <span>Achievements</span>
+</h2>
 
-<div style="margin-top: 20px;">
-  <ul>
-    <li><strong>KVPY-SA:</strong> All India Rank 588 in the National Science Fellowship exam</li>
-<li><strong>Indian Astronomy Olympiad Qualifier:</strong> Selected among 255 candidates nationwide.</li>
-<li><strong>Indian Biology Olympiad Qualifier:</strong> Selected among 322 candidates nationwide.</li>
-<li><strong>NDA-NA:</strong> Cleared national defence entrance exam; top 0.4% among 250k+ candidates.</li>
-<li><strong>FIITJEE Scholarship:</strong> Secured 100% funding for entrance exam preparation.</li>
-
-
-  </ul>
-</div>
+<ul class="achievement-list">
+  <li>KVPY-SA: All India Rank 588 in the National Science Fellowship exam.</li>
+  <li>Indian Astronomy Olympiad Qualifier: Selected among 255 candidates nationwide.</li>
+  <li>Indian Biology Olympiad Qualifier: Selected among 322 candidates nationwide.</li>
+  <li>NDA-NA: Cleared national defence entrance exam; top 0.4% among 250k+ candidates.</li>
+  <li>FIITJEE Scholarship: Secured 100% funding for entrance exam preparation.</li>
+</ul>

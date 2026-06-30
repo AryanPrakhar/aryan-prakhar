@@ -1,0 +1,15 @@
+<nav class="writing-nav" aria-label="Primary navigation">
+  <div class="writing-nav-inner">
+    <a class="writing-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <div class="writing-links">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="is-active"{% endif %}>Home</a>
+      <a href="{{ '/blogs/' | relative_url }}" {% if page.url contains '/blogs/' %}class="is-active"{% endif %}>Blog</a>
+      <a href="{{ '/garden/' | relative_url }}" {% if page.url contains '/garden/' %}class="is-active"{% endif %}>Garden</a>
+    </div>
+    <div class="nav-socials" aria-label="Profile links">
+      <a href="{{ site.github_link }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+      <a href="{{ site.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</nav>

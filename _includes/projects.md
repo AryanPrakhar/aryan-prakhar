@@ -1,36 +1,35 @@
-<h2 id="projects" style="margin: 2px 0px -15px;">Featured Project</h2>
+<h2 id="projects" class="section-heading">
+  <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+  <span>Featured Project</span>
+</h2>
 
-<div class="entry-list" style="margin-top: 20px;">
+<div class="feature-list">
 {% for project in site.data.projects.main %}
-  <div class="entry-card">
-    <div class="entry-media">
-      <img src="{{ project.image }}" alt="{{ project.title }} logo" class="entry-image entry-image-plain">
+  <article class="feature-card">
+    <div class="feature-media">
+      {% assign project_image = project.image | replace_first: './', '/' %}
+      <img src="{{ project_image | relative_url }}" alt="{{ project.title }} logo" class="feature-image">
     </div>
-    <div class="entry-copy">
-      <div class="entry-heading">
-        <div class="entry-title">
-          {% if project.repo %}<a href="{{ project.repo }}" target="_blank" rel="noopener">{{ project.title }}</a>{% else %}{{ project.title }}{% endif %}
-        </div>
+    <div class="feature-copy">
+      <div class="feature-topline">
+        <a class="feature-title" href="{{ project.repo }}" target="_blank" rel="noopener">{{ project.title }}</a>
         {% if project.status %}
-        <div class="entry-status" aria-label="Project status: {{ project.status }}">
-          <span class="entry-status-dot" aria-hidden="true"></span>
-          <span>[{{ project.status }}]</span>
-        </div>
+        <span class="feature-status">[{{ project.status }}]</span>
         {% endif %}
       </div>
       {% if project.subtitle %}
-      <div class="entry-meta">{{ project.subtitle }}</div>
+      <div class="feature-subtitle">{{ project.subtitle }}</div>
       {% endif %}
       {% if project.duration %}
-      <div class="entry-kicker">{{ project.duration }}</div>
+      <div class="feature-kicker">{{ project.duration }}</div>
       {% endif %}
-      <div class="entry-desc">{{ project.description }}</div>
+      <div class="feature-desc">{{ project.description }}</div>
       {% if project.repo %}
-      <div class="links" style="margin-top: 8px;">
-        <a href="{{ project.repo }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener" style="font-size:12px;">GitHub Repo</a>
+      <div class="feature-links">
+        <a href="{{ project.repo }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">GitHub Repo</a>
       </div>
       {% endif %}
     </div>
-  </div>
+  </article>
 {% endfor %}
 </div>

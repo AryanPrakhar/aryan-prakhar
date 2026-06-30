@@ -10,91 +10,38 @@
     {% endif %}
 
     {% if site.favicon_dark %}
-    <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
+    {% assign favicon_dark_path = site.favicon_dark | replace_first: './', '/' %}
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ favicon_dark_path | relative_url }}" type="image/png" />
     {% endif %}
     {% if site.favicon %}
-    <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
+    {% assign favicon_path = site.favicon | replace_first: './', '/' %}
+    <link rel="icon" media="(prefers-color-scheme:light)" href="{{ favicon_path | relative_url }}" type="image/png" />
     {% endif %}
-    <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
+    <script src="{{ '/assets/js/favicon-switcher.js' | relative_url }}" type="application/javascript"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     {% if site.font == "Sans Serif" %}
-    <link rel="stylesheet" href="./assets/css/font_sans_serif.css">
+    <link rel="stylesheet" href="{{ '/assets/css/font_sans_serif.css' | relative_url }}">
     {% else %}
-    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="{{ '/assets/css/font.css' | relative_url }}">
     {% endif %}
     {% if site.auto_dark_mode %}
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/publications.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
     {% else %}
-    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
-    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style-no-dark-mode.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/publications-no-dark-mode.css' | relative_url }}">
     {% endif %}
 
   </head>
   <body>
+    {% include blog-nav.html %}
     <div class="wrapper">
-      <header class="site-header">
-        {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar }}" alt="{{ site.title }}" /></a>
-        {% endif %}
-
-        <div class="site-identity">
-          <h1>{{ site.title }}</h1>
-          <div class="site-meta">
-            {% if site.position %}<span>{{ site.position }}</span>{% endif %}
-            {% if site.affiliation %}
-            <span>
-              {% if site.affiliation_link %}
-              <a href="{{ site.affiliation_link }}" rel="noopener">{{ site.affiliation }}</a>
-              {% else %}
-              {{ site.affiliation }}
-              {% endif %}
-            </span>
-            {% endif %}
-          </div>
-          {% if site.email %}
-          <email>{{ site.email }}</email>
-          {% endif %}
-        </div>
-
-        <div class="social-icons" aria-label="Profile links">
-          {% if site.google_scholar %}
-          <a href="{{ site.google_scholar }}" aria-label="Google Scholar">
-            <i class="ai ai-google-scholar"></i>
-          </a>
-          {% endif %}
-
-          {% if site.cv_link %}
-          <a href="{{ site.cv_link }}" aria-label="CV">
-            <i class="ai ai-cv"></i>
-          </a>
-          {% endif %}
-
-          {% if site.github_link %}
-          <a href="{{ site.github_link }}" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          {% endif %}
-
-          {% if site.linkedin %}
-          <a href="{{ site.linkedin }}" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          {% endif %}
-
-          {% if site.twitter %}
-          <a href="{{ site.twitter }}" aria-label="X">
-            <i class="fab fa-x-twitter"></i>
-          </a>
-          {% endif %}
-        </div>
-      </header>
       <section class="portfolio-content">
       <div class="portfolio-shell">
         <main class="portfolio-main">

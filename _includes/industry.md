@@ -1,11 +1,15 @@
-<h2 id="experience" style="margin: 2px 0px -15px;">Experience</h2>
+<h2 id="experience" class="section-heading">
+  <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+  <span>Experience</span>
+</h2>
 
-<div class="entry-list" style="margin-top: 20px;">
+<div class="entry-list">
 {% for company in site.data.industry.main %}
   <div class="entry-card">
     {% if company.logo %}
     <div class="entry-media">
-      <img src="{{ company.logo }}" alt="{{ company.name }} logo" class="entry-image entry-image-plain">
+      {% assign company_logo = company.logo | replace_first: './', '/' %}
+      <img src="{{ company_logo | relative_url }}" alt="{{ company.name }} logo" class="entry-image entry-image-plain">
     </div>
     {% endif %}
     <div class="entry-copy">
